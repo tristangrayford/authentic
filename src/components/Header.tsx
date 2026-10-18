@@ -9,49 +9,57 @@ export default function Header({
 }) {
   return (
     <div className="header">
-      <h1 className="header-title">Authentic</h1>
+      <button className="header-title" onClick={() => setPage(Page.MAIN)}>
+        <h1>Authentic</h1>
+      </button>
       <div className="nav-buttons">
         <button
           className={page === Page.MAIN ? "active" : ""}
           onClick={() => setPage(Page.MAIN)}
         >
-          Main
+          <h3>Welcome</h3>
         </button>
         <button
           className={page === Page.WHY ? "active" : ""}
           onClick={() => setPage(Page.WHY)}
         >
-          Why
-        </button>
-        <button
-          className={page === Page.ARGUMENTS ? "active" : ""}
-          onClick={() => setPage(Page.ARGUMENTS)}
-        >
-          Arguments
-        </button>
-        <button
-          className={page === Page.LINES ? "active" : ""}
-          onClick={() => setPage(Page.LINES)}
-        >
-          Lines
-        </button>
-        <button
-          className={page === Page.CONTRACTS ? "active" : ""}
-          onClick={() => setPage(Page.CONTRACTS)}
-        >
-          Contracts
-        </button>
-        <button
-          className={page === Page.IDENTIFYING_GEN_AI ? "active" : ""}
-          onClick={() => setPage(Page.IDENTIFYING_GEN_AI)}
-        >
-          Identifying Gen AI
+          <h3>Why Not Use GenAI</h3>
         </button>
         <button
           className={page === Page.CREATIVES ? "active" : ""}
           onClick={() => setPage(Page.CREATIVES)}
         >
-          Creatives
+          <h3>For Creatives</h3>
+        </button>
+        <button
+          className={page === Page.ORGANISATIONS ? "active" : ""}
+          onClick={() => setPage(Page.ORGANISATIONS)}
+        >
+          <h3>For Organisations</h3>
+        </button>
+        <button
+          className={page === Page.ARGUMENTS ? "active" : ""}
+          onClick={() => setPage(Page.ARGUMENTS)}
+        >
+          <h3>GenAI Arguments</h3>
+        </button>
+        <button
+          className={page === Page.LINES ? "active" : ""}
+          onClick={() => setPage(Page.LINES)}
+        >
+          <h3>Lines in the Sand</h3>
+        </button>
+        <button
+          className={page === Page.CONTRACTS ? "active" : ""}
+          onClick={() => setPage(Page.CONTRACTS)}
+        >
+          <h3>Anti-AI Contracts</h3>
+        </button>
+        <button
+          className={page === Page.IDENTIFYING_GEN_AI ? "active" : ""}
+          onClick={() => setPage(Page.IDENTIFYING_GEN_AI)}
+        >
+          <h3>Identifying Gen AI</h3>
         </button>
       </div>
     </div>
