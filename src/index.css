@@ -1,14 +1,24 @@
+@font-face {
+  font-family: "Stix Two Math";
+  src: url("./assets/Logo/stix-two-math.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
 :root {
   --text: #6b6375;
   --text-h: #08060d;
   --bg: #fff;
   --border: #e5e4e7;
   --accent: #aa3bff;
+  --hightlight-bg: #f4f1ff;
   --accent-bg: rgba(170, 59, 255, 0.1);
   --accent-border: rgba(170, 59, 255, 0.5);
 
   --serif: Georgia, "Times New Roman", serif;
   --heading: Georgia, "Times New Roman", serif;
+  --brand: "Stix Two Math", var(--heading);
 
   font: 18px/145% var(--serif);
   letter-spacing: 0.18px;

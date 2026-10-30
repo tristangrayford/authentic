@@ -1,6 +1,7 @@
 import "./App.css";
 import { useState } from "react";
 import Header from "./components/Header";
+import Footer from "./components/Footer";
 import Main from "./components/pages/Main";
 import Why from "./components/pages/Why";
 import Arguments from "./components/pages/Arguments";
@@ -16,14 +17,17 @@ function App() {
   return (
     <div className="App">
       <Header page={page} setPage={setPage} />
-      <div className="content">
-        {page === Page.MAIN && <Main />}
-        {page === Page.WHY && <Why />}
-        {page === Page.ARGUMENTS && <Arguments />}
-        {page === Page.LINES && <Lines />}
-        {page === Page.CONTRACTS && <Contracts />}
-        {page === Page.IDENTIFYING_GEN_AI && <IdentifyingGenAI />}
-        {page === Page.CREATIVES && <Creatives />}
+      <div className="content-wrapper">
+        <div className="content">
+          {page === Page.MAIN && <Main />}
+          {page === Page.WHY && <Why />}
+          {page === Page.ARGUMENTS && <Arguments />}
+          {page === Page.LINES && <Lines />}
+          {page === Page.CONTRACTS && <Contracts />}
+          {page === Page.IDENTIFYING_GEN_AI && <IdentifyingGenAI />}
+          {page === Page.CREATIVES && <Creatives />}
+        </div>
+        <Footer />
       </div>
     </div>
   );

@@ -1,4 +1,5 @@
 import { Page } from "../utils/Page";
+import logoFull from "../assets/Logo/authentic-logo-full.png";
 
 export default function Header({
   page,
@@ -10,7 +11,7 @@ export default function Header({
   return (
     <div className="header">
       <button className="header-title" onClick={() => setPage(Page.MAIN)}>
-        <h1>Authentic</h1>
+        <img className="header-logo" src={logoFull} alt="Authentic" />
       </button>
       <div className="nav-buttons">
         <button
