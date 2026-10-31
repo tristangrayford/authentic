@@ -9,6 +9,7 @@ import Lines from "./components/pages/Lines";
 import Contracts from "./components/pages/Contracts";
 import IdentifyingGenAI from "./components/pages/IdentifyingGenAI";
 import Creatives from "./components/pages/Creatives";
+import Organisations from "./components/pages/Organisations";
 import { Page } from "./utils/Page";
 
 function App() {
@@ -26,6 +27,7 @@ function App() {
           {page === Page.CONTRACTS && <Contracts />}
           {page === Page.IDENTIFYING_GEN_AI && <IdentifyingGenAI />}
           {page === Page.CREATIVES && <Creatives />}
+          {page === Page.ORGANISATIONS && <Organisations />}
         </div>
         <Footer />
       </div>
